@@ -1,22 +1,19 @@
 {
-  "name": "anonimasu-bot",
+  "name": "ray-typescript",
   "version": "1.0.0",
-  "description": "Music bot for Discord made in Node.JS",
+  "description": "Node.JS typescript BOT Discord",
   "main": "src/index.ts",
   "scripts": {
     "start": "ts-node-dev -r tsconfig-paths/register ./src/index.ts --respawn --transpile-only --poll ./src/index.ts",
     "build": "tsc"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Arekushi/anonimasu-bot.git"
-  },
-  "author": "arekushi",
+  "repository": "git+https://github.com/Tudo12/project-bot-ts.git",
+  "author": "Rayya#1909",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Arekushi/anonimasu-bot/issues"
+    "url": "https://github.com/Tudo12/project-bot-ts/issues"
   },
-  "homepage": "https://github.com/Arekushi/anonimasu-bot#readme",
+  "homepage": "https://github.com/Tudo12/project-bot-ts/tree/master#readme",
   "dependencies": {
     "consola": "^2.15.3",
     "discord.js": "^13.1.0",

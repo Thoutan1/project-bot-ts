@@ -39,8 +39,8 @@ export abstract class Bot extends Client {
     this.login(this.config.token);
     mongoose
       .connect(this.config.MONGOURI, {
-        autoIndex: true,
         connectTimeoutMS: 30000,
+        autoIndex: true,
       })
       .then(() => {
         consola.success(`[DATABASE] Connected`);

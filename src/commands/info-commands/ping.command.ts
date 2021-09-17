@@ -10,6 +10,7 @@ export class Ping extends Command {
       name: "ping",
       description: "Replied with pong",
       category: Category.MESSAGE,
+      disable: true,
       cooldownReply: 0,
       cooldownToUse: 5000,
       aliases: ["pg"],

@@ -10,6 +10,7 @@ export abstract class Command {
   name: string;
   client: Bot;
   category: Category;
+  disable: boolean;
   cooldownReply?: number;
   description?: string;
   aliases?: string[];
@@ -21,6 +22,7 @@ export abstract class Command {
     this.client = client;
     this.name = options?.name;
     this.category = options?.category;
+    this.disable = options?.disable;
     this.cooldownReply = options?.cooldownReply ?? 0;
     this.description = options?.description;
     this.aliases = options?.aliases;

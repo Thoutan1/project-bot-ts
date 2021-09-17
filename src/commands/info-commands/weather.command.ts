@@ -5,12 +5,13 @@ import { Message, MessageEmbed } from "discord.js";
 import { Colors } from "enums/color.enum";
 import weather from "weather-js";
 
-export class Ping extends Command {
+export class Weather extends Command {
   constructor(client: Bot) {
     super(client, {
       name: "weather",
       description: "Show Information Data Weather (Country)",
       category: Category.MESSAGE,
+      disable: false,
       cooldownReply: 0,
       cooldownToUse: 5000,
       aliases: ["cuaca"],

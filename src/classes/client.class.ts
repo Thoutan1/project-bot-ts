@@ -5,6 +5,8 @@ import { Config } from "interfaces/config.interface";
 import { Command } from "classes/command.class";
 import { Event } from "classes/event.class";
 import ConfigJson from "../config.json";
+import mongoose from "mongoose";
+import consola from "consola";
 
 const FLAGS = Intents.FLAGS;
 
@@ -35,7 +37,14 @@ export abstract class Bot extends Client {
 
   public async init(): Promise<void> {
     this.login(this.config.token);
-
+    mongoose
+      .connect(this.config.MONGOURI, {
+        autoIndex: true,
+        connectTimeoutMS: 30000,
+      })
+      .then(() => {
+        consola.success(`[DATABASE] Connected`);
+      });
     await this.setup();
   }
 

@@ -1,5 +1,5 @@
 import { Event } from "classes/event.class";
-import { Bot } from "classes/bot.class";
+import { Bot } from "classes/client.class";
 import consola from "consola";
 
 export class Ready extends Event {

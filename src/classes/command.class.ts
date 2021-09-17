@@ -1,6 +1,6 @@
 import { LogCommandAspect } from "aspects/log-command.aspect";
 import { CheckCommandUsageAspect } from "aspects/check-command-usage.aspect";
-import { Bot } from "classes/bot.class";
+import { Bot } from "classes/client.class";
 import { CommandProps } from "interfaces/command-props.interface";
 import { Message, MessageOptions, MessagePayload } from "discord.js";
 import { Category } from "enums/category.enum";

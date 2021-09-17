@@ -1,3 +1,3 @@
-import { ClientInit } from "client/anonimasu.bot";
+import { ClientInit } from "client/client.init";
 
 new ClientInit().init();

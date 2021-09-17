@@ -10,7 +10,7 @@ export class DisbaleExpection extends Exception {
     super();
 
     this.msg = msg;
-    this.message = `[COMMAND] This Command Are disabled`;
+    this.message = `[COMMAND] Hey ${msg.author.tag} This Command are **(DISABLED)**`;
   }
 
   @UseAspect(Advice.Before, LogExceptionAspect)

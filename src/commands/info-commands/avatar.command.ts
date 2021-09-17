@@ -1,5 +1,5 @@
 import { Command } from "classes/command.class";
-import { Bot } from "classes/bot.class";
+import { Bot } from "classes/client.class";
 import { Category } from "enums/category.enum";
 import { Message, MessageEmbed } from "discord.js";
 import { Colors } from "enums/color.enum";

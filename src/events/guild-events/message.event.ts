@@ -3,7 +3,7 @@ import { DisbaleExpection } from "exceptions/disbale.expection";
 import { CheckMessageAspect } from "aspects/check-message.aspect";
 import { Message } from "discord.js";
 import { getMessageArgs } from "utils/string.util";
-import { Bot } from "classes/bot.class";
+import { Bot } from "classes/client.class";
 import { Event } from "classes/event.class";
 import { UseAspect, Advice } from "ts-aspect";
 

@@ -5,6 +5,7 @@ export interface CommandProps {
   name: string;
   category: Category;
   disable: boolean;
+  ownerOnly: boolean;
   cooldownReply?: number;
   description?: string;
   aliases?: string[];

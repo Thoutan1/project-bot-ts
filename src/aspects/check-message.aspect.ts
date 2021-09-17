@@ -15,11 +15,11 @@ export class CheckMessageAspect implements Aspect {
       const isValidPrefix = message.content.toLocaleLowerCase().trim().startsWith(prefix);
 
       if (!isValidPrefix) {
-        throw new SimpleException(author, "Prefixo inválido");
+        throw new SimpleException(author, "Prefix Is Invalid");
       }
 
       if (!isValidGuild) {
-        throw new SimpleException(author, "GUILD é inválido");
+        throw new SimpleException(author, "Guild Is Invalid");
       }
     } else {
       throw {};

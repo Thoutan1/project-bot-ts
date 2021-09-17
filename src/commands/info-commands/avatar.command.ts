@@ -11,6 +11,7 @@ export class Avatar extends Command {
       description: "Show your avatar",
       category: Category.MESSAGE,
       disable: false,
+      ownerOnly: false,
       cooldownReply: 0,
       cooldownToUse: 5000,
       aliases: ["av"],

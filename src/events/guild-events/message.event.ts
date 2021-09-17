@@ -1,5 +1,6 @@
 import { NonExistentCommandException } from "exceptions/non-existent-command.exception";
 import { DisbaleExpection } from "exceptions/disbale.expection";
+import { OwnerOnlyException } from "exceptions/ownerOnly.expection";
 import { CheckMessageAspect } from "aspects/check-message.aspect";
 import { Message } from "discord.js";
 import { getMessageArgs } from "utils/string.util";
@@ -22,6 +23,9 @@ export class MessageEvent extends Event {
     if (command) {
       if (command.disable == true) {
         throw new DisbaleExpection(message);
+      }
+      if (command.ownerOnly == true && message.author.id != client.config.DevId) {
+        throw new OwnerOnlyException(message);
       }
       command.setMessage(message);
       command.run(client, message, args);

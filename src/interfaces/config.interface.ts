@@ -1,4 +1,5 @@
 export interface Config {
-    token: string;
-    prefix: string;
+  token: string;
+  prefix: string;
+  DevId: string;
 }

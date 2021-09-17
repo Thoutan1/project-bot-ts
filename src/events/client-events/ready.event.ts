@@ -11,9 +11,6 @@ export class Ready extends Event {
 
   async action(client: Bot): Promise<void> {
     consola.success(`${client.user.tag} is online!`);
-    client.user.setActivity({
-      name: "Anime Wibu",
-      type: "LISTENING",
-    });
+    client.user.setActivity("Ray Typescript", { type: "COMPETING" });
   }
 }

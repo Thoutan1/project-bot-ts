@@ -12,6 +12,7 @@ export class Weather extends Command {
       description: "Show Information Data Weather (Country)",
       category: Category.MESSAGE,
       disable: false,
+      ownerOnly: true,
       cooldownReply: 0,
       cooldownToUse: 5000,
       aliases: ["cuaca"],
